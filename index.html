@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Tres en raya</title>
+</head>
+<body>
+
+    <audio id="audio_fondo" src="audio/audio_fondo.mp3" autoplay loop></audio>
+    <audio id="button" src="audio/press_buttom.mp3"></audio>
+    <audio id="turno" src="audio/turno.wav"></audio>
+    <audio id="win" src="audio/win.mp3"></audio>
+
+    <h1>Tres en raya</h1>
+
+    <div id="config_partida">
+    
+    <div class="primer_bloque">
+        <h1 id="op1" class="opciones">Jugar contra la PC</h1>
+        <img id="img2" src="imagenes/robotic-hand.png"  width="100px">
+    </div>
+    
+    <div class="primer_bloque">
+        <h1 id="op2" class="opciones">Jugar contra un amigo</h1>
+        <img id="img1" src="imagenes/hold.png" width="100px">
+    </div>
+    
+    <div class="segundo_bloque">
+
+        <div>
+            <h1 id="pc_bando" class="bando">Escoje el bando de la PC</h1>
+            <h1 id="amigo_bando" class="bando">Escoje el bando de tu amigo</h1>
+        </div>
+        
+
+        <div  class="bandos_a_escoger">
+            <img id="circulo_rojo" src="imagenes/aro_rojo.png" class="opcion_bando" width="70px">
+            <img id="circulo_amarillo" src="imagenes/aro_amarillo.png" class=" opcion_bando" width="70px">
+        </div>
+        
+        <div class="bandos_a_escoger">
+            <img id="x_rojo" src="imagenes/x_rojo.png" class=" opcion_bando" width="70px">
+            <img id="x_amarillo" src="imagenes/x_amarillo.png" class=" opcion_bando" width="70px">
+        </div>
+            
+        
+        
+        <div>
+
+            <video src="video/gameplay.mp4" autoplay loop muted ></video>
+            <button id="iniciar" type="button">Iniciar partida</button>
+
+        </div>
+
+        </div>
+    </div>
+
+    <div  id="matriz">
+                
+                <div class="q" id="q1"></div>
+                <div class="q" id="q2"></div>
+                <div class="q" id="q3"></div>
+                <div class="q" id="q4"></div>
+                <div class="q" id="q5"></div>
+                <div class="q" id="q6"></div>
+                <div class="q" id="q7"></div>
+                <div class="q" id="q8"></div>
+                <div class="q" id="q9"></div>
+    
+    
+
+    </div>
+
+    
+    <button id="reiniciar" type="button">Reiniciar</button>
+        <button id="volver" type="button">Volver al menu</button>
+        <p id="texto_ganador" style="color: white" margin-top="1%"></p>
+
+
+    
+      <script src="file.js"></script>
+</body>
+
+</html>

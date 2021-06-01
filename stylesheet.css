@@ -1,0 +1,158 @@
+body, html{
+    background-color: black;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Long+Cang&display=swap');
+  
+  * {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+video{
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+
+  #matriz{
+      display: none;
+      width: 330px;
+      height: 330px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+ 
+    
+   h1{
+      text-align: center;
+      font-size: 40px;
+      color: white;
+      width: 350px;
+      margin: 30px auto;
+      border: 4px solid blue;
+      border-radius: 25px;
+      font-family: 'Roboto', sans-serif;
+      cursor: default;
+    
+    }
+  
+  .opciones:hover{
+    color: red;
+    cursor: pointer;
+  }
+
+
+  .primer_bloque{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #op1{
+    font-size: 30px;
+  }
+  #op2{ 
+    width: 400px;
+    font-size: 30px;
+  }
+
+
+  .primer_bloque:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  
+  .opcion_bando{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bando{
+    display: none;
+    margin-top: 2%;
+    width: 500px;  
+    font-size: 30px;
+  }
+  
+  .q{
+      width: 100px;
+      height: 100px;
+      float: left;
+      padding: 0px;
+      margin: 0px;
+      cursor: pointer;
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 45px;
+      color: red;
+  
+    }
+    
+
+
+#q1,#q2,#q3,#q4,#q5,#q6{
+      border-bottom: 10px solid white;
+}
+
+
+
+#q1,#q2,#q4,#q5,#q7,#q8{
+      border-right: 10px solid white;
+}
+  
+#reiniciar, #volver{
+  display: none;
+}
+
+    
+.q:hover{
+      background-image: radial-gradient(circle, blue, black, black);
+}
+    
+
+button{
+  
+    font-family: sans-serif;
+    font-size: 25px;
+    border-radius: 5%;
+    cursor: pointer;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin: 1% auto;
+    display: block;
+  }
+  
+  button:hover{
+    color: beige;
+    background-color: #1505ac;
+  }
+  
+  #texto_ganador{
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .bandos_a_escoger{
+    margin: 1%;
+    display: inline-block;
+  }
+  #iniciar{
+    display: none;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px){
+    .primer_bloque{
+      width: 100%;
+    }
+    .segundo_bloque{
+      width: 100%;
+    }
+  }
